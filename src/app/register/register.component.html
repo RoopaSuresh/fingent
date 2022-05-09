@@ -8,14 +8,14 @@
             </div>
 
             <div class="card-body">
-                <form action="">
+                <form action="" [formGroup]="registerForm">
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
 
-                        <input type="text" class="form-control" placeholder="First Name" id="funame" required>
+                        <input type="text" class="form-control" formControlName="fname" name="fname" placeholder="First Name" id="funame" required>
 
                     </div>
 
@@ -28,7 +28,7 @@
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
 
-                        <input type="text" class="form-control " placeholder="Last Name" id="luname" required>
+                        <input type="text" class="form-control " formControlName="lname" name="lname" placeholder="Last Name" id="luname" required>
 
                     </div>
 
@@ -40,7 +40,7 @@
                             <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                         </div>
                         <!-- //reactive form -->
-                        <input type="email" class="form-control" placeholder="Enter your email id" id="email" required>
+                        <input type="email" class="form-control" formControlName="email" name="email" placeholder="Enter your email id" id="email" required>
 
 
                     </div>
@@ -54,7 +54,7 @@
                             <span class="input-group-text"><i class="fas fa-phone"></i></span>
                         </div>
                         <!-- //reactive form -->
-                        <input type="text" class="form-control" placeholder="phone" id="phone" required>
+                        <input type="text" class="form-control" formControlName="phone" name="phone" placeholder="phone" id="phone" required>
 
 
                     </div>
@@ -62,7 +62,7 @@
 <!-- div for invalid phone -->
 
 <div class="form-group">
-    <input type="submit" value="Register" class="btn float-right register_btn " style="width:50%">
+    <input type="submit" value="Register" (click)="register()" class="btn float-right register_btn " style="width:50%">
 
 </div>
 
