@@ -8,8 +8,15 @@ import { RegisterComponent } from '../register/register.component';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private rf:RegisterComponent) { 
-    
+  fname:any
+  lname:any
+  email:any
+  phone:any
+  constructor() { 
+    this.fname = localStorage.getItem("fname")
+    this.lname = localStorage.getItem("lname")
+    this.email = localStorage.getItem("email")
+    this.phone = localStorage.getItem("phone")
   }
 
   ngOnInit(): void {
