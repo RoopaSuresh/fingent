@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Comforter+Brush&family=Cookie&family=Cormorant+Garamond:ital,wght@1,300&family=Dancing+Script&family=Holtwood+One+SC&family=Homemade+Apple&family=Licorice&family=Lora:ital@1&family=Monoton&family=Niconne&family=Oleo+Script&family=Pacifico&family=Padauk&family=Sacramento&family=Satisfy&family=Shizuru&family=Special+Elite&family=Staatliches&family=Yuji+Hentaigana+Akebono&display=swap');
+
+
+
+
+
+
 .container{
     height: 400px;
     width: 500px;
@@ -21,7 +29,9 @@ html,body{
 .input-group-prepend span{
     width: 50px;
     height: 45px;
-    background-color: #FFC312;
+    /* background-color: #FFC312; */
+    background-color: #4680a1;
+
     color: black;
     border:0 !important;
     }
@@ -32,7 +42,7 @@ html,body{
 
 .register_btn{
     color: black;
-    background-color: #FFC312;
+    background-color: #4680a1;
     width: 100px;
     margin-top: 48px;
     margin-bottom: 100px;
@@ -41,6 +51,7 @@ html,body{
     
     .register_btn:hover{
     color: black;
-    background-color: white;
+    background-color: rgb(67, 71, 75);
     }
-    
+
+        
